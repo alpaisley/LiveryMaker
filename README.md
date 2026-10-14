@@ -87,7 +87,7 @@ The title stays centred on the window line (the dashed orange line) unless you p
 registration stays at its usual height the same way. The right-hand side always follows, so you only place each once.
 Each aircraft type keeps its own positions, saved in the project. Use **Preview selected aircraft** to see the result on the 3D model.
 
-## 3D preview (all five aircraft)
+## 3D preview (all six aircraft)
 
 **Preview selected aircraft** adds a **3D** tab that shows the livery on the aircraft's own model. To turn it on, set
 the *3D preview* folder on the **Aircraft files** tab. It needs that aircraft's `.obj` files and its `.acf` file:
@@ -108,9 +108,18 @@ down, doors shut, and with the engine type set on the Fleet row.
 | Embraer ERJ145 | The Loganair (G-SAJC) livery | No paintkit exists, so it repaints that livery. |
 | FlyJSim Q4XP | The FlyJSim house livery (G-JEDI) | Writes DXT1 .dds files and `LiveryStat.prf` (registration and SELCAL). |
 | X-Crafts E190 | The KLM Cityhopper (PH-EXD) livery | Writes DXT5 .dds files, the cockpit placard and `tail.txt`. Only the E190 variant is made. |
+| JustFlight BAe 146 | The QantasLink (VH-NJJ) livery | Versions 100, 200 and 300 (set on the Fleet row). Writes DXT1 .dds files. One livery folder per aircraft, made for that length. |
 
-The ERJ145, Q4XP and E190 templates were measured on those exact base liveries. If you choose a different one, the app
+The ERJ145, Q4XP, E190 and BAe 146 templates were measured on those exact base liveries. If you choose a different one, the app
 warns you, because titles and markings may land in the wrong places.
+
+## BAe 146: the three lengths
+
+The 146-100, -200 and -300 share one set of textures, but each length uses different parts of them, so a livery is
+made for one length: choose 100, 200 or 300 on the Fleet row and install the folder for that version. The titles stay
+the same distance from the nose on every length, and the registration and tail logo the same distance from the tail.
+The Positions tab shows the length of the first 146 on your Fleet tab. For the 3D preview, choose the BAe 146
+aircraft folder (or a copy of its objects folder with the three .acf files).
 
 ## Good to know
 
@@ -121,7 +130,7 @@ warns you, because titles and markings may land in the wrong places.
   their shape. It shows in the Title position view and on every aircraft.
 - **Weathering:** the slider on the Design tab sets how dirty the ToLiss A319 and A321 look, using the dirt layers
   in their paintkits. The middle is the paintkit as supplied, far left is spotless, far right is heavily weathered. The
-  ERJ145, Q4XP and E190 keep the weathering of the livery they are built on.
+  ERJ145, Q4XP, E190 and BAe 146 keep the weathering of the livery they are built on.
 - **Tail logo:** choose the saltire, your own PNG (with a transparent background) or nothing on the Design tab. Its
   size there applies to every aircraft; the Positions tab moves it, fine-tunes the size and tilts it per aircraft
   (Angle: plus leans the top towards the nose, and the other side of the fin gets the matching tilt). It reads

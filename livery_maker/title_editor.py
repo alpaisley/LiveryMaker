@@ -26,6 +26,14 @@ def side_strip(t, livery_dir: str, spec: dict = None):
     """Join the template's fuselage textures side by side and cut out the band given by spec (default: titles)."""
     T = spec or t.TITLE
     y0, y1 = T['band']
+    if T.get('canvas'):                  # the template draws its own side view (BAe 146)
+        p = os.path.join(livery_dir, T['canvas'])
+        if not os.path.exists(p):
+            return None
+        im = Image.open(p).convert('RGB')
+        x0, x1 = T['cols']
+        k = min(1.0, BG_MAX_W / im.size[0])
+        return im.resize((int(im.size[0] * k), int(im.size[1] * k)), Image.LANCZOS), (x0, x1)
     parts = []
     for rel in T['files']:
         p = os.path.join(livery_dir, rel)

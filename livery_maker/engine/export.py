@@ -70,7 +70,7 @@ def zip_folder(folder: str) -> str:
     return path
 
 
-FILLS = {'A319': '9DC3E6', 'A321': 'D5A6E6', 'A21N': 'C6E0B4', 'E145': 'F8CBAD', 'Q400': 'FFFF00', 'E190': 'F4B183'}
+FILLS = {'A319': '9DC3E6', 'A321': 'D5A6E6', 'A21N': 'C6E0B4', 'E145': 'F8CBAD', 'Q400': 'FFFF00', 'E190': 'F4B183', 'B461': 'BDD7EE', 'B462': 'BDD7EE', 'B463': 'BDD7EE'}
 
 
 def write_fleet_xlsx(project: Project, path: str) -> None:
