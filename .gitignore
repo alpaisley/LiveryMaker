@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Build output (recreated by build_mac.sh / build_windows.bat)
+build/
+dist/
+*.spec
+
+# macOS / Windows clutter
+.DS_Store
+Thumbs.db

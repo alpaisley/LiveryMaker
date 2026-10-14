@@ -1,0 +1,82 @@
+{
+  "design": {
+    "airline": "FlyFurball",
+    "title_text": "FlyFurball",
+    "title_font": "Inter Display ExtraBold Italic",
+    "title_scale": 1.0,
+    "body_colour": "#FAFBFA",
+    "accent_colour": "#005EB8",
+    "title_colour": "#005EB8",
+    "symbol_colour": "#F6F6F6",
+    "reg_colour": "#141414",
+    "reg_font": "Inter Display Bold",
+    "fade_shift": 0.0,
+    "fade_length": 1.0,
+    "tail_symbol": "saltire",
+    "tail_image": "",
+    "tail_image_size": 0.55,
+    "saltire_width": 0.14,
+    "winglet_symbol": true,
+    "engine_colour": "accent",
+    "tailplane_colour": "accent",
+    "home_base": "EGPH"
+  },
+  "fleet": [
+    {
+      "template": "toliss_a319",
+      "reg": "G-FURB",
+      "variant": "CFM",
+      "selcal": "EH-KR"
+    },
+    {
+      "template": "toliss_a319",
+      "reg": "G-FURC",
+      "variant": "IAE",
+      "selcal": "FL-MQ"
+    },
+    {
+      "template": "toliss_a321",
+      "reg": "G-FURD",
+      "variant": "ceo CFM",
+      "selcal": "CG-HP"
+    },
+    {
+      "template": "toliss_a321",
+      "reg": "G-FURE",
+      "variant": "ceo IAE",
+      "selcal": "DK-LR"
+    },
+    {
+      "template": "toliss_a321",
+      "reg": "G-FURF",
+      "variant": "neo LEAP",
+      "selcal": "AJ-MS"
+    },
+    {
+      "template": "toliss_a321",
+      "reg": "G-FURG",
+      "variant": "neo PW",
+      "selcal": "BE-KP"
+    },
+    {
+      "template": "erj145",
+      "reg": "G-FURH",
+      "variant": "AE3007",
+      "selcal": "CJ-GQ"
+    },
+    {
+      "template": "fjs_q400",
+      "reg": "G-FURK",
+      "variant": "PW150A",
+      "selcal": "DM-PS"
+    },
+    {
+      "template": "xcrafts_e190",
+      "reg": "G-FURJ",
+      "variant": "CF34-10E",
+      "selcal": "EJ-HR"
+    }
+  ],
+  "sources": {},
+  "output_dir": ""
+}
